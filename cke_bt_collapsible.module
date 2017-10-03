@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains cke_bt_collapsible.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cke_bt_collapsible_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cke_bt_collapsible module.
+    case 'help.page.cke_bt_collapsible':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
